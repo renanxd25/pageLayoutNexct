@@ -1,0 +1,30 @@
+.body1{
+  width: 80px;
+  height: 900px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.blue {
+  background-color: #00d99d;
+  margin-top: 24px;
+}
+
+.red {
+  background-color: rgba(27,27,27,0.25);
+  margin-top: 16px;
+}
+
+.green {
+  background-color: rgba(27,27,27,0.25);
+  margin-top: 16px;
+}

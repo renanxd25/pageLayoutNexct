@@ -1,0 +1,75 @@
+<div class="body1">
+    <div class="userMain">
+      <span class="titleUser">User</span>
+      <div class="btnUser">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <path d="M2.66663 16C2.66663 8.63616 8.63616 2.66663 16 2.66663C23.3638 2.66663 29.3333 8.63616 29.3333 16C29.3333 23.3638 23.3638 29.3333 16 29.3333C8.63616 29.3333 2.66663 23.3638 2.66663 16Z" fill="#00D99D"/>
+          <path d="M10.6666 16H21.3333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 21.3334L16 10.6667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </div>
+    </div>
+    <div class="input-container">
+      <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M15.1218 16.1218L20 21M15.0962 16.0962C12.5578 18.6346 8.44221 18.6346 5.90381 16.0962C3.3654 13.5578 3.3654 9.44221 5.90381 6.90381C8.44221 4.3654 12.5578 4.3654 15.0962 6.90381C17.6346 9.44221 17.6346 13.5578 15.0962 16.0962Z" stroke="#1B1B1B" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      <input type="text" class="input-field" placeholder="Pesquisar...">
+  </div>
+    <div class="firstList">
+      <div class="iconsStyleFirst">
+        <img src="../../../assets/icons/chatIcon.png" alt="">
+        <span>Topicos</span>
+      </div>
+      <div class="iconsStyleFirst">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M5 5C3.89543 5 3 5.89543 3 7V15C3 16.1046 3.89543 17 5 17H6V19C6 19.8385 6.96993 20.3047 7.6247 19.7809L11 17H19C20.1046 17 21 16.1046 21 15V7C21 5.89543 20.1046 5 19 5H5Z" stroke="#1B1B1B" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M7 9H15M7 13H11" stroke="#1B1B1B" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Perguntas Frequentes</span>
+      </div>
+      <div class="iconsStyleFirst">
+        <img src="../../../assets/icons/emailIcon.png" alt="">
+        <span>Menções</span>
+      </div>
+      <div class="iconsStyleFirst">
+        <img src="../../../assets/icons/starIcon.png" alt="">
+        <span>Itens Salvos</span>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="accordion-item" *ngFor="let item of accordionItems; let i = index">
+        <div class="accordion-title" (click)="toggleAccordion(i)">
+          <span>{{ item.title }}</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M5 12.5L10 7.5L15 12.1154" stroke="#1B1B1B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="accordion-content" [ngClass]="{'open': item.open}">
+          <div class="subItensTitle">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="ic actions hashtag">
+              <path id="Vector" d="M1 14H4.375M4.375 14H13.375M4.375 14L4 17M4.375 14L5.625 4M13.375 14H17M13.375 14L13 17M13.375 14L14.625 4M2 4H5.625M5.625 4H14.625M5.625 4L6 1M14.625 4H17M14.625 4L15 1" stroke="#1B1B1B" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              </svg>
+            <span>{{ item.firstFav }}</span>
+          </div>
+          <div class="subItensTitle">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="ic actions hashtag">
+              <path id="Vector" d="M1 14H4.375M4.375 14H13.375M4.375 14L4 17M4.375 14L5.625 4M13.375 14H17M13.375 14L13 17M13.375 14L14.625 4M2 4H5.625M5.625 4H14.625M5.625 4L6 1M14.625 4H17M14.625 4L15 1" stroke="#1B1B1B" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              </svg>
+            <span>{{ item.secondFav }}</span>
+          </div>
+          <div class="subItensTitle">
+            <svg class="iconStyle" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="ic actions hashtag">
+              <path id="Vector" d="M1 14H4.375M4.375 14H13.375M4.375 14L4 17M4.375 14L5.625 4M13.375 14H17M13.375 14L13 17M13.375 14L14.625 4M2 4H5.625M5.625 4H14.625M5.625 4L6 1M14.625 4H17M14.625 4L15 1" stroke="#1B1B1B" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              </svg>
+            <span>{{ item.thirdFav }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

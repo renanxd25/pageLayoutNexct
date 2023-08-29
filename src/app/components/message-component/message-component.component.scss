@@ -1,0 +1,60 @@
+.body1{
+  //background-color: white;
+  width: 1000px;
+  height: 800px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 24px;
+}
+
+.headerMenssage{
+  display: flex;
+  justify-content: space-between;
+}
+.mainTitle .titleVendas{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600px;
+  line-height: 32px;
+}
+
+.mainTitle .assistenteVendas{
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500px;
+  line-height: 20px;
+  color: rgba(27,27,27,0.50);
+  margin-left: 16px;
+}
+
+.boxChat{
+  height: 700px;
+}
+
+.chatInputDiv{
+  width: 100%;
+  position: relative;
+}
+.inputChat{
+  width: 1000px;
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-field {
+  padding-left: 30px; /* Para dar espaço ao ícone */
+}

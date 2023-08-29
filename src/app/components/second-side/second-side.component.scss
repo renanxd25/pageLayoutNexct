@@ -1,0 +1,134 @@
+.body1{
+  background-color: #f0f0f0;
+  height: 852px;
+  width:  200px;
+  padding: 24px;
+}
+
+.mainBody{
+  padding: 24px;
+}
+.btnUser{
+  width: 32px;
+  height: 32px;
+}
+.titleUser{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600px;
+  line-height: 32px;
+}
+.accordion {
+  font-family: Arial, sans-serif;
+
+}
+
+.accordion-item {
+
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+
+  cursor: pointer;
+  margin-bottom: 12px;
+
+}
+
+.accordion-title span {
+  color: black;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600px !important;
+  line-height: 20px;
+}
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-content span{
+  margin-bottom: 15px;
+  color: black;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500px !important;
+  line-height: 20px;
+
+}
+
+
+.accordion-content.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.userMain{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.searchBar{
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.searchInput{
+  width: 100%;
+  padding: 12px;
+  align-items: center;
+}
+.firstList{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+}
+
+.firstList span{
+  margin-bottom: 20px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 32px;
+
+}
+
+.input-icon {
+  position: absolute;
+ margin-left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-field {
+  padding: 12px;
+  padding-left: 30px; /* Para dar espaço ao ícone */
+
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 8px;
+  width: 150px
+}
+.subItensTitle{
+  margin-bottom: 20px;
+}
+.subItensTitle span{
+  margin-left: 12px;
+  margin-bottom: 8px;
+
+}
+
+.iconsStyleFirst{
+margin-bottom: 20px;
+}
+
+.iconsStyleFirst span{
+  margin-left: 12px;
+}
+
